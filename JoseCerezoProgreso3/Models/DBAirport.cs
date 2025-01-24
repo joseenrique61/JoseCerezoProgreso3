@@ -17,6 +17,6 @@ namespace JoseCerezoProgreso3.Models
 
 		public string Email { get; set; }
 
-		public string MyName => "JCerezo";
+		public string MyName { get; set; } = "JCerezo";
 	}
 }

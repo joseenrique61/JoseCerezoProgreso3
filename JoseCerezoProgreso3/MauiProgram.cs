@@ -21,7 +21,7 @@ namespace JoseCerezoProgreso3
 #endif
 
             builder.Services.AddSingleton<IAPIClient, APIClient>();
-            builder.Services.AddSingleton<IDatabaseConnection, IDatabaseConnection>();
+            builder.Services.AddSingleton<IDatabaseConnection, DatabaseConnection>();
 
             return builder.Build();
         }

@@ -2,12 +2,17 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JoseCerezoProgreso3.Views.RegistrosBDD"
+             xmlns:viewmodels="clr-namespace:JoseCerezoProgreso3.ViewModels"
              Title="Registros BDD">
+    <ContentPage.BindingContext>
+        <viewmodels:RegistroBDDViewModel/>
+    </ContentPage.BindingContext>
     <VerticalStackLayout>
         <Label x:Name="jcerezo_Label1"
             Text="José Cerezo"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <ListView x:Name="jcerezo_ListView"/>
+        <ListView x:Name="jcerezo_ListView" ItemsSource="{Binding Airports}"/>
+        <Button x:Name="jcerezo_Button" Text="Actualizar" Command="{Binding ActualizarCommand}"/>
     </VerticalStackLayout>
 </ContentPage>
