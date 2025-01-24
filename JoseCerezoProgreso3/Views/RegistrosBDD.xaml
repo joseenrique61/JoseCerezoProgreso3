@@ -7,7 +7,7 @@
     <ContentPage.BindingContext>
         <viewmodels:RegistroBDDViewModel/>
     </ContentPage.BindingContext>
-    <VerticalStackLayout>
+    <VerticalStackLayout Spacing="20">
         <Label x:Name="jcerezo_Label1"
             Text="José Cerezo"
             VerticalOptions="Center" 
