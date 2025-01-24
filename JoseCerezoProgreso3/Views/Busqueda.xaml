@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JoseCerezoProgreso3.Views.Busqueda"
+             Title="Búsqueda">
+    <VerticalStackLayout>
+        <VerticalStackLayout x:Name="jcerezo_VerticalStackLayout">
+            <Editor x:Name="jcerezo_Editor"/>
+            <HorizontalStackLayout x:Name="jcerezo_HorizontalStackLayout">
+                <Button x:Name="jcerezo_Button1" Text="Buscar"/>
+                <Button x:Name="jcerezo_Button2" Text="Limpiar"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
