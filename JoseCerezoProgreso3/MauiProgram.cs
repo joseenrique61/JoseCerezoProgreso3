@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using JoseCerezoProgreso3.Utilities;
+using Microsoft.Extensions.Logging;
 
 namespace JoseCerezoProgreso3
 {
@@ -18,6 +19,9 @@ namespace JoseCerezoProgreso3
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+
+            builder.Services.AddSingleton<IAPIClient, APIClient>();
+            builder.Services.AddSingleton<IDatabaseConnection, IDatabaseConnection>();
 
             return builder.Build();
         }
